@@ -1,0 +1,34 @@
+.create-task {
+	max-width: 960px;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Raleway';
+	padding: 30px 0;
+}
+
+.create-task h2 {
+	margin-bottom: 15px;
+}
+
+.create-task button {
+	width: 15%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.create-task label {
+	margin: 5px 0;
+}
+.create-task span {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.create-task input {
+	height: 40px;
+	width: 250px;
+	outline: none;
+	font-size: 1.2em;
+	padding-left: 10px;
+	padding-right: 5px;
+}

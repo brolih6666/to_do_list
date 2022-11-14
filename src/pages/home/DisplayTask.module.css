@@ -1,0 +1,58 @@
+.tasks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #444;
+	max-width: 660px;
+	margin: 0 auto;
+	padding: 5px 0px;
+	border-radius: 20px;
+}
+
+.task-wrap {
+	font-family: 'Raleway';
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #847d60ad;
+	margin: 10px 0;
+	margin-right: auto;
+	padding: 20px 30px;
+	border-radius: 15px;
+}
+.task-wrap .input-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.task-wrap input {
+	outline: none;
+	background-color: transparent;
+	border: none;
+}
+.task-wrap .task-name {
+	font-size: 1.5em;
+	font-weight: 500;
+	margin-right: auto;
+}
+
+.task-wrap .task-date {
+	font-weight: 700;
+	font-size: 1.1em;
+	margin-top: 5px;
+	margin-right: auto;
+}
+.task-wrap .button-wrap {
+	display: flex;
+}
+.task-button {
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+.task-button img {
+	width: 70%;
+}
