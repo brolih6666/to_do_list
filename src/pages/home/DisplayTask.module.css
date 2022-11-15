@@ -36,6 +36,7 @@
 	font-size: 1.5em;
 	font-weight: 500;
 	margin-right: auto;
+	width: 200%;
 }
 
 .task-wrap .task-date {
@@ -51,8 +52,16 @@
 	background-color: transparent;
 	outline: none;
 	border: none;
+	margin-right: -15px;
 }
 
 .task-button img {
-	width: 70%;
+	width: 55%;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+.completed {
+	text-decoration: line-through;
+	background-color: red;
 }

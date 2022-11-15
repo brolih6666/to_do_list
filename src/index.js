@@ -4,7 +4,6 @@ import './index.css'
 import App from './App'
 
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
-const user = 'asd'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 	<BrowserRouter>

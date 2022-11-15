@@ -25,10 +25,12 @@
 }
 
 .create-task input {
-	height: 40px;
-	width: 250px;
+	height: 50px;
+	width: 300px;
 	outline: none;
-	font-size: 1.2em;
-	padding-left: 10px;
+	font-size: 1.3em;
+	padding-left: 15px;
 	padding-right: 5px;
+	border: 2 px solide black;
+	border-radius: 10px;
 }

@@ -1,10 +1,15 @@
-import { React, useState, useEffect, useRef } from 'react'
+// styles
 import styles from './DisplayTask.module.css'
-import updateCollection from '../../hooks/updateCollection'
+// assets
 import editBtnImg from '../../assets/edit.svg'
 import deleteBtn from '../../assets/delete.svg'
+import verifiedBtnImg from '../../assets/verified.svg'
+// imports
+import { React, useState, useEffect, useRef } from 'react'
+import updateCollection from '../../hooks/updateCollection'
+
 export default function DisplayTask({ docs }) {
-	const { deleteTask, editTask } = updateCollection('tasks')
+	const { deleteTask, editTask, completeTask } = updateCollection('tasks')
 
 	return (
 		<div className={styles.tasks}>
@@ -12,16 +17,26 @@ export default function DisplayTask({ docs }) {
 				return (
 					<div className={styles['task-wrap']} key={doc.id}>
 						<div className={styles['input-wrap']}>
-							<input className={styles['task-name']} type='text' value={doc.task} readOnly />
-							<input className={styles['task-date']} type='date' value={doc.date} readOnly />
+							<input
+								className={`${styles['task-name']} ${doc.completed ? `${styles.completed}` : ''}`}
+								type='text'
+								defaultValue={doc.task}
+								readOnly
+							/>
+							<input className={styles['task-date']} type='date' defaultValue={doc.date} readOnly />
 						</div>
 						<div className={styles['button-wrap']}>
-							<button className={styles['task-button']}>
-								<img src={editBtnImg} alt='edit button' onClick={e => editTask(doc.id)} />
-							</button>
+							{!doc.completed && (
+								<button className={styles['task-button']}>
+									<img src={editBtnImg} alt='edit' onClick={e => editTask(e, doc.id)} />
+								</button>
+							)}
 
 							<button className={styles['task-button']}>
-								<img onClick={() => deleteTask(doc.id)} src={deleteBtn} alt='delete button' />
+								<img onClick={() => deleteTask(doc.id)} src={deleteBtn} alt='delete' />
+							</button>
+							<button className={styles['task-button']}>
+								<img src={verifiedBtnImg} alt='verified' onClick={e => completeTask(doc.id)} />
 							</button>
 						</div>
 					</div>

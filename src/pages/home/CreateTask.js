@@ -7,8 +7,9 @@ export default function CreateTask() {
 	const [date, setDate] = useState('')
 	const handleSubmit = e => {
 		e.preventDefault()
-		if (task && date) {
-			addTask({ task, date })
+		console.log()
+		if (task && new Date(date).getFullYear() > 2016) {
+			addTask({ task, date, completed: false })
 			setDate('')
 			setTask('')
 		}
