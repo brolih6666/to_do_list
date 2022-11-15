@@ -11,12 +11,12 @@
 }
 
 .task-wrap {
-	font-family: 'Raleway';
+	font-family: 'Dancing Script';
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-	background-color: #847d60ad;
+	background-color: #413620;
 	margin: 10px 0;
 	margin-right: auto;
 	padding: 20px 30px;
@@ -31,9 +31,11 @@
 	outline: none;
 	background-color: transparent;
 	border: none;
+	font-family: 'Dancing Script';
+	color: #d5d1bc;
 }
 .task-wrap .task-name {
-	font-size: 1.5em;
+	font-size: 2em;
 	font-weight: 500;
 	margin-right: auto;
 	width: 200%;
@@ -41,9 +43,10 @@
 
 .task-wrap .task-date {
 	font-weight: 700;
-	font-size: 1.1em;
-	margin-top: 5px;
+	font-size: 1em;
+	margin-top: 10px;
 	margin-right: auto;
+	color: #d5d1bc;
 }
 .task-wrap .button-wrap {
 	display: flex;
@@ -59,9 +62,13 @@
 	width: 55%;
 	margin-top: 5px;
 	margin-left: 15px;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+.task-button img:hover {
+	width: 59%;
 }
 
 .completed {
 	text-decoration: line-through;
-	background-color: red;
 }

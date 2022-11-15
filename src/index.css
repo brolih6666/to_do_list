@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 * {
 	padding: 0;
 	margin: 0;
@@ -11,6 +10,7 @@ body {
 		'Droid Sans', 'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: #d5d1bc;
 }
 
 code {
@@ -19,19 +19,20 @@ code {
 
 .btn {
 	padding: 10px 15px;
-	border: 2px solid #847d60;
-	border-radius: 5px;
-	font-family: 'Raleway';
-	font-size: 1.2em;
+	border: 2px solid #413620;
+	border-radius: 10px;
+	font-family: 'Dancing Script';
+	font-size: 1.5em;
 	font-weight: 700;
-	color: #847d60;
+	color: #413620;
 	cursor: pointer;
-	margin-top: 10px;
+	margin-top: 20px;
+	background-color: #d5d1bc;
 }
 
 .btn:hover {
-	color: white;
-	background-color: #847d60;
+	color: #d5d1bc;
+	background-color: #413620;
 }
 Link {
 	cursor: pointer;

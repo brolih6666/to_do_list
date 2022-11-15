@@ -1,8 +1,5 @@
-import { React, useState } from 'react'
 import { projectFirestore } from '../config/firebase'
-import useCollection from '../hooks/useCollection'
 import editBtnImg from '../assets/edit.svg'
-import deleteBtn from '../assets/delete.svg'
 import saveBtnImg from '../assets/save.svg'
 export default function UpdateCollection(collection) {
 	const firestore = projectFirestore.collection(collection)
@@ -33,7 +30,6 @@ export default function UpdateCollection(collection) {
 	}
 	const completeTask = async id => {
 		await firestore.doc(id).update({ completed: true })
-		// await firestore.doc(id).update({ completed: true })
 	}
 	return { addTask, deleteTask, editTask, completeTask }
 }

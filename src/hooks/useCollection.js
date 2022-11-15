@@ -22,6 +22,7 @@ export default function useCollection(collection) {
 					setError('could not fetch the data')
 				}
 			)
+		return () => unsub()
 	}, [collection])
 
 	return { docs, error }

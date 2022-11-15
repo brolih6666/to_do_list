@@ -5,7 +5,7 @@ import editBtnImg from '../../assets/edit.svg'
 import deleteBtn from '../../assets/delete.svg'
 import verifiedBtnImg from '../../assets/verified.svg'
 // imports
-import { React, useState, useEffect, useRef } from 'react'
+import { React } from 'react'
 import updateCollection from '../../hooks/updateCollection'
 
 export default function DisplayTask({ docs }) {
